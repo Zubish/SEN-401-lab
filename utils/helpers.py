@@ -1,3 +1,8 @@
+import statistics
+
+def median_score(data):
+    return statistics.median(d["score"] for d in data)
+
 def highest_score(students):
     return max(students, key=lambda student: student["score"])
 
