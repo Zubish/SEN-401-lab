@@ -19,3 +19,8 @@ def lowest_stock_item(items):
     if len(items) == 0:
         return None
     return min(items, key=lambda i: i["quantity"])
+
+def total_stock_value(items):
+    if len(items) == 0:
+        return 0
+    return sum(i["quantity"] * i["price"] for i in items)
