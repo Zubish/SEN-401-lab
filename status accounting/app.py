@@ -10,3 +10,8 @@ for item in inventory:
 print(f"\nTotal Stock Value: {total_stock_value(inventory)}")
 print(f"Highest Stock: {highest_stock_item(inventory)['item_name']}")
 print(f"Lowest Stock : {lowest_stock_item(inventory)['item_name']}")
+
+def average_price(items):
+    if len(items) == 0:
+        return 0
+    return sum(i["price"] for i in items) / len(items)
