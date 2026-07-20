@@ -5,3 +5,11 @@ inventory = [
     {"item_name": "Notebook", "quantity": 30, "price": 250},
     {"item_name": "Marker", "quantity": 20, "price": 150},
 ]
+
+from dataclasses import dataclass
+
+@dataclass
+class InventoryItem:
+    item_name: str
+    quantity: int
+    price: int
