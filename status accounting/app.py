@@ -1,4 +1,8 @@
-"""app.py - Demo app for Lab 3 (Status Accounting)."""
+"""app.py - Demo app for Lab 3 (Status Accounting).
+
+Runs the inventory report using data from inventory.py
+and calculation helpers from helpers.py.
+"""
 
 from inventory import inventory
 from helpers import total_stock_value, highest_stock_item, lowest_stock_item
